@@ -31,6 +31,9 @@ match priority:
 # Append urgency if time-bound
 if time_bound == "yes":
     reminder += " that requires immediate attention today!"
+# For non time bound
+if non_time_bound == "no"
+    reminder += "is a low priority task. Consider completing it when you have free time."
 
 # Print the final reminder (exactly what checker wants)
 print(reminder)
