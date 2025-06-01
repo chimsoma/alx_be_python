@@ -23,4 +23,5 @@ elif priority in {"high", "medium", "low"}:
     message += ". Consider completing it when you have time."
 
 # Print the final reminder
-print(message)
+print(f"Reminder: '{task}' is a {priority} priority task" + (" that requires immediate attention today!" if time_bound == "yes" else ""))
+
